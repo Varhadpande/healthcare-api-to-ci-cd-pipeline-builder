@@ -67,7 +67,7 @@ def main():
     st.write("This dashboard simulates a real-time CI/CD data pipeline for a healthcare organization.")
     st.write("## Real-Time Data Refresh")
     if st.button('Refresh Data'):
-        st.experimental_rerun()
+        st.rerun()
     # Fetch data
     patients_data = fetch_patients()
     healthcare_data = generate_healthcare_data(100)
